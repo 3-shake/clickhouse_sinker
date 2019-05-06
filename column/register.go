@@ -1,7 +1,7 @@
 package column
 
 import (
-	"github.com/housepower/clickhouse_sinker/column/impls"
+	"github.com/3-shake/clickhouse_sinker/column/impls"
 )
 
 var (
@@ -59,5 +59,9 @@ func init() {
 
 	regist("FixedString", func() IColumn {
 		return impls.NewStringColumn()
+	})
+
+	regist("UUID", func() IColumn {
+		return impls.NewUUIDColumn()
 	})
 }

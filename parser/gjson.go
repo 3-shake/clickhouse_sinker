@@ -1,7 +1,7 @@
 package parser
 
 import (
-	"github.com/housepower/clickhouse_sinker/model"
+	"github.com/3-shake/clickhouse_sinker/model"
 
 	"github.com/tidwall/gjson"
 )

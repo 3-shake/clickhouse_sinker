@@ -5,9 +5,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/housepower/clickhouse_sinker/model"
-	"github.com/housepower/clickhouse_sinker/pool"
-	"github.com/housepower/clickhouse_sinker/util"
+	"github.com/3-shake/clickhouse_sinker/model"
+	"github.com/3-shake/clickhouse_sinker/pool"
+	"github.com/3-shake/clickhouse_sinker/util"
 
 	"github.com/wswz/go_commons/log"
 	"github.com/wswz/go_commons/utils"

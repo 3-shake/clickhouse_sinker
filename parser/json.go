@@ -3,7 +3,7 @@ package parser
 import (
 	"strconv"
 
-	"github.com/housepower/clickhouse_sinker/model"
+	"github.com/3-shake/clickhouse_sinker/model"
 
 	"github.com/json-iterator/go"
 )

@@ -16,7 +16,7 @@ clickhouse_sinker is a sinker program that consumes kafka message and import the
 
 ### By binary files (suggested)
 
-Download the binary files from [release](https://github.com/housepower/clickhouse_sinker/releases), choose the executable binary file according to your env, modify the `conf` files, then run ` ./clickhouse_sinker -conf conf  `
+Download the binary files from [release](https://github.com/3-shake/clickhouse_sinker/releases), choose the executable binary file according to your env, modify the `conf` files, then run ` ./clickhouse_sinker -conf conf  `
 
 ### By source 
 
@@ -25,9 +25,9 @@ Download the binary files from [release](https://github.com/housepower/clickhous
 * Go Get
 
 ```
-go get -u github.com/housepower/clickhouse_sinker/...
+go get -u github.com/3-shake/clickhouse_sinker/...
 
-cd $GOPATH/src/github.com/housepower/clickhouse_sinker
+cd $GOPATH/src/github.com/3-shake/clickhouse_sinker
 
 go get -u github.com/kardianos/govendor
 

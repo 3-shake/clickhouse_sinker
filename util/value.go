@@ -1,7 +1,8 @@
 package util
 
 import (
-	"github.com/housepower/clickhouse_sinker/model"
+	"github.com/3-shake/clickhouse_sinker/column"
+	"github.com/3-shake/clickhouse_sinker/model"
 )
 
 //这里对metric的value类型，只有三种情况， （float64，string，map[string]interface{})
@@ -14,9 +15,13 @@ func GetValueByType(metric model.Metric, cwt *model.ColumnWithType) interface{} 
 		return metric.GetFloat(cwt.Name)
 	case "string":
 		return metric.GetString(cwt.Name)
-	//never happen
 	default:
-		return ""
+		val := metric.Get(cwt.Name)
+		col := column.GetColumnByName(cwt.Type)
+		if val == nil {
+			return col.DefaultValue()
+		}
+		return col.GetValue(val)
 	}
 }
 
@@ -26,6 +31,8 @@ func switchType(typ string) string {
 		return "int"
 	case "String", "FixString":
 		return "string"
+	case "UUID":
+		return "uuid"
 	case "Float32", "Float64":
 		return "float"
 	default:

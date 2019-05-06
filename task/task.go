@@ -8,10 +8,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/housepower/clickhouse_sinker/input"
-	"github.com/housepower/clickhouse_sinker/model"
-	"github.com/housepower/clickhouse_sinker/output"
-	"github.com/housepower/clickhouse_sinker/parser"
+	"github.com/3-shake/clickhouse_sinker/input"
+	"github.com/3-shake/clickhouse_sinker/model"
+	"github.com/3-shake/clickhouse_sinker/output"
+	"github.com/3-shake/clickhouse_sinker/parser"
 
 	"github.com/wswz/go_commons/log"
 )

@@ -1,7 +1,7 @@
 package model
 
 import (
-	"github.com/housepower/clickhouse_sinker/column"
+	"github.com/3-shake/clickhouse_sinker/column"
 )
 
 type LogKV map[string]interface{}

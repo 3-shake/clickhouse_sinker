@@ -1,11 +1,11 @@
 package internal
 
 import (
-	"github.com/housepower/clickhouse_sinker/input"
-	"github.com/housepower/clickhouse_sinker/output"
-	"github.com/housepower/clickhouse_sinker/parser"
-	"github.com/housepower/clickhouse_sinker/task"
-	"github.com/housepower/clickhouse_sinker/util"
+	"github.com/3-shake/clickhouse_sinker/input"
+	"github.com/3-shake/clickhouse_sinker/output"
+	"github.com/3-shake/clickhouse_sinker/parser"
+	"github.com/3-shake/clickhouse_sinker/task"
+	"github.com/3-shake/clickhouse_sinker/util"
 )
 
 // GenTasks generate the tasks via config
